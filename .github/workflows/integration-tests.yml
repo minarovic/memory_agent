@@ -1,4 +1,10 @@
-# This workflow will run integration tests for the current project once per day
+on:
+  push:
+    branches-ignore:
+      - "**"
+  pull_request:
+    branches-ignore:
+      - "**"# This workflow will run integration tests for the current project once per day
 
 name: Integration Tests
 
